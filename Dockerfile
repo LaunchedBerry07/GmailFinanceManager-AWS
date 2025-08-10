@@ -2,7 +2,7 @@
 FROM node:18-alpine AS deps
 WORKDIR /app
 COPY package.json package-lock.json ./
-RUN npm cache clean --force && npm install
+RUN npm install --legacy-peer-deps
 
 # Stage 2: Build the application
 FROM node:18-alpine AS builder
