@@ -68,8 +68,3 @@ A sophisticated Gmail Finance Manager application designed to serve as a central
 ### Step 5: Initiate Deployment
 
 1.  Push a commit to the branch you configured in the trigger.
-2.  Cloud Build will automatically start a new build, which will:
-    * Build the Docker container image.
-    * Push the image to Google Artifact Registry.
-    * Deploy the new image to Google Cloud Run, injecting the secrets as environment variables.
-3.  Monitor the build logs in the Cloud Build history to ensure a successful deployment.
